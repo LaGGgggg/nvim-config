@@ -15,6 +15,7 @@ require('config.inits.lua')
 require('config.inits.python')
 require('config.inits.terminal')
 require('config.lazy')
+require('config.inits.latex')
 require('config.inits.neotree')
 
 -- Keymaps after plugins load (config.lazy)
