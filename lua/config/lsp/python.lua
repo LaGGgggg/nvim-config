@@ -1,6 +1,4 @@
-local lspconfig = require('lspconfig')
-
-lspconfig.ruff.setup({
+vim.lsp.config('ruff', {
     on_attach = function(client, bufnr)
         vim.diagnostic.config({
             virtual_text = {
@@ -11,6 +9,8 @@ lspconfig.ruff.setup({
         })
     end,
 })
+
+vim.lsp.enable('ruff')
 
 local function get_python_path(workspace)
 
@@ -32,7 +32,7 @@ local function get_python_path(workspace)
     return exepath('python3') or exepath('python') or 'python'
 end
 
-lspconfig.pyright.setup({
+vim.lsp.config('pyright', {
     on_attach = function()
         require('config.keymaps.lsp')()
     end,
@@ -50,3 +50,5 @@ lspconfig.pyright.setup({
         },
     },
 })
+
+vim.lsp.enable('pyright')
