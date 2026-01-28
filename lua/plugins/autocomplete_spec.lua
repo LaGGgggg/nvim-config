@@ -44,24 +44,20 @@ return {
     },
     {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate',
+        build = ':TSUpdate',
         config = function()
-            require('nvim-treesitter.configs').setup({
-                ensure_installed = {
-                    'javascript',
-                    'typescript',
-                    'vue',
-                    'css',
-                    'html',
-                    'python',
-                },
-                auto_install = true,
-                highlight = {
-                    enable = true,
-                },
-                indent = {
-                    enable = true,
-                },
+            require('nvim-treesitter').install({
+                'javascript',
+                'typescript',
+                'vue',
+                'css',
+                'html',
+                'python',
+                'cpp',
+                'lua',
+                'json',
+                'yaml',
+                'dockerfile',
             })
         end,
     },
