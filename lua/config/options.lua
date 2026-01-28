@@ -7,7 +7,7 @@ vim.env.LANG = 'en_US'
 -- Options
 vim.opt.mouse = ''
 
-vim.opt.guifont = 'Jetbrains Mono:h10, Monospace:h10'
+vim.opt.guifont = 'Jetbrains Mono:h9, Monospace:h9'
 vim.opt.fileencoding = 'utf-8'
 vim.opt.fileformat = 'unix'
 
