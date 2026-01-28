@@ -26,6 +26,8 @@ vim.api.nvim_set_hl(0, 'Statement', { link = 'Normal' })
 vim.api.nvim_set_hl(0, '@variable', { link = 'Normal' })
 vim.api.nvim_set_hl(0, '@variable.builtin', { link = 'Normal' })
 
+vim.api.nvim_set_hl(0, '@attribute.builtin', { link = 'Constant' })
+
 vim.api.nvim_set_hl(0, '@string.regexp', { link = 'String' })
 vim.api.nvim_set_hl(0, '@string.special', { link = 'String' })
 vim.api.nvim_set_hl(0, '@string.escape', { link = 'Constant' })
