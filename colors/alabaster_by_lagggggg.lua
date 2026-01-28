@@ -1,6 +1,6 @@
 vim.g.colors_name = 'alabaster_by_lagggggg'
 
-colors = {
+local colors = {
   background = '#1B1C1F',
   normal = '#E9ECEF',
   comment = '#FFC66E',
