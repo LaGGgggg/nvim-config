@@ -32,7 +32,7 @@ local function get_python_path(workspace)
         end
     end
 
-    return exepath('python3') or exepath('python') or 'python'
+    return vim.fn.exepath('python3') or vim.fn.exepath('python') or 'python'
 end
 
 vim.lsp.config('pyright', {
@@ -40,7 +40,7 @@ vim.lsp.config('pyright', {
         require('config.keymaps.lsp')()
     end,
     before_init = function(_, config)
-        config.settings.python.pythonPath = get_python_path(config.root_dir)
+        config.settings.python.pythonPath = get_python_path(config.root_dir or vim.loop.cwd())
     end,
     settings = {
         pyright = {
