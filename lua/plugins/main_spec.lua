@@ -59,6 +59,8 @@ return {
                     'css',
                     'html',
                     'python',
+                    'lua',
+                    'cpp',
                 }
 
                 return vim.tbl_contains(included_filetypes, vim.fn.getbufvar(buf, '&filetype'))
