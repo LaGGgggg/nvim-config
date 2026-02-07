@@ -5,6 +5,6 @@ end
 
 vim.api.nvim_create_autocmd('TermOpen', {
     callback = function()
-        vim.api.nvim_buf_set_option(0, 'modifiable', true)
+        vim.api.nvim_set_option_value('modifiable', true, { buf = 0 })
     end,
 })
