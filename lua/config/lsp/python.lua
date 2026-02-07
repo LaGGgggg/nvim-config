@@ -48,7 +48,7 @@ vim.lsp.config('pyright', {
         },
         python = {
             analysis = {
-                ignore = { '*' },
+                typeCheckingMode = 'off',
             },
         },
     },
