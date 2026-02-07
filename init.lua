@@ -20,6 +20,10 @@ require('config.inits.neotree')
 -- Keymaps after plugins load (config.lazy)
 require('config.keymaps.telescope')
 
+-- Statuslines
+require('config.statuslines.default')
+require('config.statuslines.gitsigns')
+
 -- LSP
 require('config.lsp.js_ts_vue')  -- to change supported languages, read and edit this file
 require('config.lsp.python')
