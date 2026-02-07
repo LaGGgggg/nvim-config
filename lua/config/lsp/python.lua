@@ -1,5 +1,8 @@
 vim.lsp.config('ruff', {
     on_attach = function(client, bufnr)
+
+        require('config.keymaps.lsp')()
+
         vim.diagnostic.config({
             virtual_text = {
                 format = function(diagnostic)
