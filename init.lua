@@ -25,7 +25,8 @@ require('config.statuslines.default')
 require('config.statuslines.gitsigns')
 
 -- LSP
-require('config.lsp.js_ts_vue')  -- to change supported languages, read and edit this file
+require('config.lsp.js_ts')
+require('config.lsp.vue')
 require('config.lsp.python')
 require('config.lsp.tailwind')
 require('config.lsp.c_based')
