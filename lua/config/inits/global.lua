@@ -1,11 +1,7 @@
 vim.api.nvim_create_autocmd('VimEnter', {
     callback = function()
-
         -- cd to opened directory
         vim.cmd('cd %:p:h')
-
-        -- Colorscheme
-        vim.cmd.colorscheme('alabaster_by_lagggggg')
     end,
 })
 

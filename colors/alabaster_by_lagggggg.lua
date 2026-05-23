@@ -1,13 +1,6 @@
 vim.g.colors_name = 'alabaster_by_lagggggg'
 
-local colors = {
-  background = '#1B1C1F',
-  normal = '#E9ECEF',
-  comment = '#FFC66E',
-  string = '#6AAB73',
-  constant = '#C77DBB',
-  definition = '#57AAF7',
-}
+local COLORS = require('colors.alabaster_by_lagggggg.colors')
 
 -- Diagnostic
 vim.api.nvim_set_hl(0, 'DiagnosticError', { link = 'Normal' })
@@ -16,11 +9,11 @@ vim.api.nvim_set_hl(0, 'DiagnosticInfo', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'DiagnosticHint', { link = 'Normal' })
 
 -- Code
-vim.api.nvim_set_hl(0, 'Normal', { fg = colors.normal, bg = colors.background })
-vim.api.nvim_set_hl(0, 'Comment', { fg = colors.comment })
-vim.api.nvim_set_hl(0, 'String', { fg = colors.string })
-vim.api.nvim_set_hl(0, 'Constant', { fg = colors.constant })
-vim.api.nvim_set_hl(0, 'Function', { fg = colors.definition })
+vim.api.nvim_set_hl(0, 'Normal', { fg = COLORS.normal, bg = COLORS.background })
+vim.api.nvim_set_hl(0, 'Comment', { fg = COLORS.comment })
+vim.api.nvim_set_hl(0, 'String', { fg = COLORS.string })
+vim.api.nvim_set_hl(0, 'Constant', { fg = COLORS.constant })
+vim.api.nvim_set_hl(0, 'Function', { link = 'Normal' })
 vim.api.nvim_set_hl(0, 'Statement', { link = 'Normal' })
 
 vim.api.nvim_set_hl(0, '@variable', { link = 'Normal' })
@@ -38,7 +31,7 @@ vim.api.nvim_set_hl(0, '@constant.builtin', { link = 'Constant' })
 vim.api.nvim_set_hl(0, '@function', { link = 'Function' })
 vim.api.nvim_set_hl(0, '@function.builtin', { link = 'Constant' })
 vim.api.nvim_set_hl(0, '@function.call', { link = 'Normal' })
-vim.api.nvim_set_hl(0, '@function.method', { link = 'Normal' })
+vim.api.nvim_set_hl(0, '@function.method', { link = 'Function' })
 vim.api.nvim_set_hl(0, '@function.method.call', { link = 'Normal' })
 
 vim.api.nvim_set_hl(0, '@type.builtin', { link = 'Constant' })
