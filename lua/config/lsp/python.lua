@@ -1,5 +1,5 @@
 vim.lsp.config('ruff', {
-    on_attach = function(client, bufnr)
+    on_attach = function()
 
         require('config.keymaps.lsp')()
 

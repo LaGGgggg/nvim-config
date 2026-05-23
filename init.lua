@@ -1,4 +1,5 @@
-require('config.options')  -- global, environment variables; options
+-- Global, environment variables; options
+require('config.options')
 
 -- Keymaps
 require('config.keymaps.folds')
