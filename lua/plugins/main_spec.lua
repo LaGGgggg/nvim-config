@@ -61,22 +61,11 @@ return {
         event = { 'InsertLeave', 'TextChanged' },
         debounce_delay = 2000,
     },
+    {
+        'numToStr/Comment.nvim',
         opts = {
-            condition = function(buf)
-
-                local included_filetypes = {
-                    'javascript',
-                    'typescript',
-                    'vue',
-                    'css',
-                    'html',
-                    'python',
-                    'lua',
-                    'cpp',
-                }
-
-                return vim.tbl_contains(included_filetypes, vim.fn.getbufvar(buf, '&filetype'))
-            end,
+            toggler = require('config.keymaps.comment').toggler_mappings,
+            opleader = require('config.keymaps.comment').opleader_mappings,
         },
     },
 }
