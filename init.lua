@@ -12,8 +12,11 @@ require('config.keymaps.terminals').global()
 
 -- Inits
 require('config.inits.global')
+require('config.inits.colorscheme')
+require('config.inits.treesitter')
 require('config.inits.lua')
 require('config.inits.python')
+require('config.inits.rust')
 require('config.inits.terminal')
 require('config.lazy')
 require('config.inits.neotree')
