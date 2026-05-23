@@ -17,6 +17,7 @@ require('config.inits.python')
 require('config.inits.terminal')
 require('config.lazy')
 require('config.inits.neotree')
+require('config.keymaps.git')
 
 -- Keymaps after plugins load (config.lazy)
 require('config.keymaps.telescope')
