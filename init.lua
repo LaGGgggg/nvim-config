@@ -20,6 +20,7 @@ require('config.inits.neotree')
 
 -- Keymaps after plugins load (config.lazy)
 require('config.keymaps.telescope')
+require('config.keymaps.github_copilot').global()
 
 -- Statuslines
 require('config.statuslines.default')
