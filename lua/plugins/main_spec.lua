@@ -59,6 +59,8 @@ return {
         'okuuva/auto-save.nvim',
         version = '*',
         event = { 'InsertLeave', 'TextChanged' },
+        debounce_delay = 2000,
+    },
         opts = {
             condition = function(buf)
 
