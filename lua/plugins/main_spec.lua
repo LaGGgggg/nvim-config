@@ -43,7 +43,7 @@ return {
     },
     {
         'lukas-reineke/virt-column.nvim',
-        opts = { virtcolumn = '121' },
+        opts = { virtcolumn = '101' },
     },
     {
         'okuuva/auto-save.nvim',
