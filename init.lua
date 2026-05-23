@@ -8,7 +8,7 @@ require('config.keymaps.marks')
 require('config.keymaps.registers')
 require('config.keymaps.splits')
 require('config.keymaps.tabs')
-require('config.keymaps.terminals')
+require('config.keymaps.terminals').global()
 
 -- Inits
 require('config.inits.global')

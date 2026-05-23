@@ -5,6 +5,17 @@ end
 
 vim.api.nvim_create_autocmd('TermOpen', {
     callback = function()
+
+        require('config.keymaps.terminals').buffer_local()
+
         vim.api.nvim_set_option_value('modifiable', true, { buf = 0 })
+    end,
+})
+
+vim.api.nvim_create_autocmd('BufEnter', {
+    callback = function(args)
+        if vim.bo[args.buf].buftype == 'terminal' then
+            vim.cmd.startinsert()
+        end
     end,
 })
