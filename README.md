@@ -11,25 +11,25 @@ If you have any questions, you can open an issue or contact me via the links/ema
 ### Structure
 ```text
 nvim
-├───init.lua     # main Neovim entry point, [more about it](#initlua)
-├───lazy.lock    # lazy.nvim plugin versions, [more about it](#plugins)
-├───colors       # color schemes, [more about it](#color-scheme)
+├───init.lua     # main Neovim entry point
+├───lazy.lock    # lazy.nvim plugin versions
+├───colors       # color schemes
 │   └───...
 └───lua          # main directory for lua config files
-    ├───colors   # color schemes additional info, [more about it](#color-scheme)
+    ├───colors   # color schemes additional info
     │   └───...
-    ├───plugins  # plugin settings, [more about it](#plugins)
+    ├───plugins  # plugin settings
     │   └───...
     └───config   # main configs directory
-        ├───lazy.lua     # lazy.nvim entry point, [more about it](#plugins)
-        ├───options.lua  # Neovim's global options overrides, [more about it](#options)
-        ├───inits        # Neovim's autocmds, [more about it](#inits)
+        ├───lazy.lua     # lazy.nvim entry point
+        ├───options.lua  # Neovim's global options overrides
+        ├───inits        # Neovim's autocmds
         │   └───...
-        ├───keymaps      # keymaps overrides, [more about it](#keymaps)
+        ├───keymaps      # keymaps overrides
         │   └───...
-        ├───lsp          # LSP configurations, [more about it](#lsps)
+        ├───lsp          # LSP configurations
         │   └───...
-        └───statuslines  # Neovim's statusline overrides, [more about it](#statuslines)
+        └───statuslines  # Neovim's statusline overrides
             └───...
 ```
 
@@ -169,9 +169,9 @@ I list my to-dos inside a markdown file and edit it with Neovim, so I need some 
 highlights for this use case.
 
 Matches:
-`!!` - `markdown_extended.priority`
-` \\d\\d ` - `markdown_extended.date`
-`!!\\d\\d ` - `markdown_extended.priority_date`
+- `!!` - `markdown_extended.priority`
+- ` \\d\\d ` - `markdown_extended.date`
+- `!!\\d\\d ` - `markdown_extended.priority_date`
 
 Highlights:
 - All headings are not bold
