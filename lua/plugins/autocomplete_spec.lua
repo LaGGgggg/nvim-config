@@ -53,6 +53,8 @@ return {
                 'json',
                 'yaml',
                 'dockerfile',
+                'rust',
+                'markdown',
             })
         end,
     },
