@@ -1,6 +1,7 @@
 return {
     {
         'nvim-telescope/telescope.nvim',
+        version = '*',
         dependencies = {
             'nvim-lua/plenary.nvim',
             { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
@@ -40,6 +41,15 @@ return {
             'MunifTanjim/nui.nvim',
         },
         lazy = false,
+        config = function()
+            require('neo-tree').setup({
+                filesystem = {
+                    window = {
+                        mappings = require('config.keymaps.neo_tree').window_mappings,
+                    },
+                },
+            })
+        end,
     },
     {
         'lukas-reineke/virt-column.nvim',
